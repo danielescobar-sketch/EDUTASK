@@ -1,0 +1,104 @@
+/* ===============================
+   ESTILOS GENERALES
+================================ */
+body {
+    background-color: #fcf8fc;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* ===============================
+   NAVBAR ESTUDIANTE
+================================ */
+.custom-navbar {
+    background-color: #c6c19b;
+    border-radius: 0 0 20px 20px;
+}
+
+/* 🔴 FIX DROPDOWN */
+.navbar,
+.custom-navbar,
+.navbar .container-fluid {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1050;
+}
+
+.nav-link {
+    color: #2c2c2c !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #7a5c2e !important;
+}
+
+/* Hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(89,61,8,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===============================
+   DROPDOWN PERFIL
+================================ */
+.dropdown-menu {
+    border-radius: 15px;
+    min-width: 220px;
+    padding: 0;
+    z-index: 1055;
+}
+
+.perfil-menu {
+    animation: bajarPerfil 0.25s ease;
+}
+
+/* ===============================
+   BUSCADOR
+================================ */
+.buscador {
+    background-color: #d8d5b8;
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+.btn-search {
+    background: none;
+    border: none;
+}
+
+/* ===============================
+   CARDS
+================================ */
+.custom-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f27267;
+    color: white;
+}
+
+.avatar {
+    background: white;
+    color: #f27267;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============================
+   LATERAL
+================================ */
+.entregas,
+.comentarios {
+    background-color: #f6f3e1;
+    border-radius: 15px;
+}

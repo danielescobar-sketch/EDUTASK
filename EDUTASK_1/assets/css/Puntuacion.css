@@ -1,0 +1,250 @@
+/*PALETA DE COLORES */
+:root {
+    --color-olive: #BFBD99;      /* Fondo del Header */
+    --color-beige: #F2F1DC;      /* Fondo de las Cards de tareas */
+    --color-brown: #593D08;      /* Color principal de texto */
+    --color-terracotta: #D95F43; /* Acentos oscuros (Logo, detalles) */
+    --color-salmon: #F28D77;     /* Acentos claros */
+    --color-lila-soft: #E0D8F0;  /* Color suave para iconos de tareas */
+    --color-purple-accent: #6f42c1; /* Acento morado para iconos */
+}
+
+/* ESTILOS GENERALES*/
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #FDFDFD; 
+    color: var(--color-brown);
+}
+
+/* Clases de utilidad rápidas si se necesitan en el HTML */
+.text-brown { color: var(--color-brown) !important; }
+.text-terracotta { color: var(--color-terracotta) !important; }
+.bg-olive { background-color: var(--color-olive) !important; }
+.bg-beige { background-color: var(--color-beige) !important; }
+
+/* HEADER / NAVBAR*/
+.navbar-custom {
+    background-color: var(--color-olive);
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Estilos para la IMAGEN del logo */
+.logo-img {
+    height: 100px; 
+    width: auto;  
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.05); 
+}
+
+.nav-link {
+    color: var(--color-brown) !important;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: opacity 0.3s ease;
+}
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.user-icon {
+    font-size: 1.8rem;
+    color: var(--color-purple-accent);
+    transition: transform 0.2s ease;
+}
+.user-icon:hover {
+    transform: scale(1.1);
+}
+
+/*
+   CONTENIDO PRINCIPAL & NAVEGACIÓN*/
+.main-content {
+    padding: 2rem 5%;
+    min-height: 80vh; 
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--color-brown);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+.back-link:hover {
+    color: var(--color-terracotta);
+}
+.back-link i {
+    margin-right: 8px;
+}
+
+/* BANNER DEL CURSO*/
+.course-banner {
+    background: linear-gradient(135deg, #a8a8a8 0%, #cfcfcf 100%);
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    margin: 0.5rem 0 2.5rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.2);
+}
+
+.course-banner h2 {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Decoración geométrica de fondo en el banner */
+.banner-decoration {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%) rotate(-15deg);
+    opacity: 0.08;
+    font-size: 12rem;
+    color: #000;
+    pointer-events: none; 
+}
+
+.badge-custom {
+    background-color: rgba(255,255,255,0.85);
+    color: #444;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 
+   LISTA DE TAREAS (CARDS)*/
+.unit-title {
+    color: var(--color-brown);
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+.unit-subtitle {
+     color: var(--color-terracotta);
+     font-size: 0.95rem;
+     font-weight: 600;
+     margin-bottom: 1.5rem;
+}
+
+.task-card {
+    background-color: var(--color-beige);
+    border: none;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    flex-direction: row; 
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(89, 61, 8, 0.1); 
+}
+
+/* Icono circular a la izquierda (A) */
+.task-icon-left {
+    background-color: var(--color-lila-soft);
+    color: var(--color-purple-accent);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0; 
+}
+
+.task-info {
+    flex-grow: 1;
+    padding-right: 1rem;
+}
+.task-title {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: var(--color-brown);
+}
+.task-subtitle {
+    font-size: 0.9rem;
+    color: #6c757d; 
+}
+
+.task-grade {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-brown);
+    margin-right: 2rem;
+    white-space: nowrap; 
+}
+
+/* Decoración derecha de la card */
+.task-decoration-right {
+    color: #d1c7c7;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+}
+.decoration-icon-sm { font-size: 0.8rem; }
+.decoration-icon-md { font-size: 1rem; }
+
+/* RESPONSIVIDAD (MEDIA QUERIES)*/
+@media (max-width: 768px) {
+    .course-banner {
+        padding: 2rem;
+    }
+    .banner-decoration {
+        font-size: 8rem;
+        right: -10%;
+    }
+    .task-grade {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-custom {
+        padding: 1rem; 
+    }
+    .task-card {
+        flex-wrap: wrap; 
+        padding: 1.2rem;
+    }
+    .task-icon-left {
+        margin-bottom: 1rem; 
+    }
+    .task-info {
+        width: calc(100% - 70px); 
+        margin-bottom: 1rem;
+    }
+    .task-grade {
+        width: 100%;
+        text-align: right; 
+        margin-right: 0;
+        margin-top: 0.5rem;
+        order: 3; 
+    }
+    .task-decoration-right {
+        display: none; 
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(89,61,8,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

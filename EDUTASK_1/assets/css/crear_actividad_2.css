@@ -1,0 +1,76 @@
+body {
+    background-color: #faf8f6;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* Navbar */
+.navbar-custom {
+    background-color: #b7af7f;
+    border-radius: 0 0 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 1.8rem;
+        color: #5e462a !important;
+    }
+
+    .nav-link {
+        color: #443f34 !important;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+    
+.breadcrumb {
+    background-color: transparent;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-card {
+    background-color: #f9f5f8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-control,
+.form-select {
+    background-color: #e9e4ed;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #333;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.obligatorio {
+    font-size: 0.75rem;
+    color: #a78bfa;
+}
+
+/* === BOTÓN CREAR ACTIVIDAD === */
+.btn-crear {
+    background-color: #4C3D09; /* marrón oscuro igual al de la imagen */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-crear:hover {
+    background-color: #6A5112; /* tono más claro al pasar el mouse */
+}

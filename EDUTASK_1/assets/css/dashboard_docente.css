@@ -1,0 +1,194 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f6f1f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar-custom {
+    background-color: #b7af7f;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1050;
+}
+
+/* FIX PARA DROPDOWN */
+.navbar,
+.navbar-custom,
+.navbar .container-fluid {
+    overflow: visible !important;
+}
+
+/* Logo */
+.logo img {
+    display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+.menu-links .nav-link {
+    margin: 0 10px;
+    color: #222 !important;
+    font-weight: 500;
+}
+
+.menu-links .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   TOGGLER
+========================= */
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(89,78,31,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* =========================
+   PERFIL
+========================= */
+.perfil-wrapper {
+    position: relative;
+}
+
+.perfil-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.perfil-btn i {
+    font-size: 36px;
+    color: #5b4e1f;
+    cursor: pointer;
+}
+
+/* =========================
+   MENÚ PERFIL
+========================= */
+.perfil-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    min-width: 180px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 10px;
+    z-index: 9999;
+
+    /* oculto por defecto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+}
+
+.perfil-menu.activo {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* =========================
+   BOTÓN CERRAR SESIÓN
+========================= */
+.btn-cerrar {
+    width: 100%;
+    background-color: #e36457;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.btn-cerrar:hover {
+    background-color: #cf5549;
+}
+/* =========================
+   BUSCADOR
+========================= */
+.search-box {
+    background-color: #b7af7f;
+    border-radius: 15px;
+    padding: 8px 10px;
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-box input::placeholder {
+    color: #5b4e1f;
+}
+
+.search-box .btn {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    color: #5b4e1f;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card-custom {
+    background-color: #fdfaf0;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: none;
+    height: 100%;
+}
+
+.card-header-custom {
+    background-color: #e36457;
+    color: white;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.avatar {
+    background-color: #fff;
+    color: #e36457;
+    border-radius: 50%;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.btn-ver {
+    background-color: #e36457;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-ver:hover {
+    background-color: #cf5549;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.box {
+    background-color: #f6f1dd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

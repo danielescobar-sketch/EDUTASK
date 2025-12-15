@@ -1,0 +1,117 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Tipo de letra */
+    background-color: #ffffff;
+    /* Fondo blanco */
+    height: 100vh;
+    /* Altura del 100% de la ventana */
+    display: flex;
+    /* Usa flexbox para centrar contenido */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+}
+
+/* Estilo de la tarjeta principal (contenedor del login) */
+.card {
+    border: none;
+    /* Quita el borde */
+    width: 380px;
+    /* Ancho fijo */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    border-radius: 12px;
+    /* Bordes redondeados */
+}
+
+/* Estilo del texto o logo principal */
+.logo {
+    font-family: 'Pacifico', cursive;
+    /* Fuente decorativa */
+    font-size: 38px;
+    /* Tamaño de texto */
+    color: #6b4f2d;
+    /* Color marrón */
+}
+
+/* Imagen dentro del logo */
+.logo img {
+    width: 150px;
+    /* Ancho de la imagen */
+    display: block;
+    /* La convierte en bloque */
+    margin: 0 auto 30px;
+    /* Centrada y con espacio inferior */
+}
+
+/* Botón personalizado color marrón */
+.btn-brown {
+    background-color: #6b4f2d;
+    color: #fff;
+    /* Texto blanco */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.btn-brown:hover {
+    background-color: #8b5e3c;
+    /* Color más claro */
+    color: #fff;
+}
+
+/* Estilo del divisor (línea con la palabra "o") */
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before {
+    content: "";
+    /* Crea una línea horizontal */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 1;
+}
+
+.divider span {
+    background-color: #fff;
+    /* Fondo blanco para tapar la línea detrás */
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    color: #777;
+    /* Color gris del texto */
+}
+
+/* Botón de Google */
+.google-btn {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #555;
+}
+
+/* Icono de Google dentro del botón */
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+    /* Espacio entre el ícono y el texto */
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #3b6fc1;
+    /* Azul */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el mouse */
+}
